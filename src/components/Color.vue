@@ -1,4 +1,5 @@
 <template>
+<fragment>
   <slot name="color" :value="value">
     <div :style="`color: ${value}`">{{ value }}</div>
   </slot>
@@ -7,6 +8,7 @@
   </slot>
 
   <button @click="handleSelectedColor">Click me</button>
+  </fragment>
 </template>
 
 <script>
